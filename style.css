@@ -1,0 +1,232 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-family: 'Manrope', sans-serif; */
+  font-family: monospace;
+}
+.attribution {
+  font-size: 11px;
+  padding-top: 40px;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+.container {
+  display: flex;
+  gap: 30rem;
+}
+.cards {
+  background-image: url(images/bg-main-desktop.png);
+  background-repeat: no-repeat;
+  height: 100vh;
+  padding-left: 20px;
+}
+.front {
+  position: relative;
+  left: 160px;
+  top: 120px;
+  width: 400px;
+}
+.card-1{
+  position: relative;
+}
+.circle{
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  left: 190px;
+  top: 150px ;
+  z-index: 1;
+}
+.round{
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  position: absolute;
+  left: 240px;
+  top:160px;
+  z-index: 1;
+}
+.main-2{
+  color: #fff;
+  font-size: 15px;
+  z-index: 1;
+}
+.all-span{
+  position: absolute;
+  left: 480px;
+  top: 80px;
+}
+.back .card-1 p {
+  position: absolute;
+  color: #fff;
+  top: 10px;
+}
+.back {
+  position: relative;
+  width: 400px;
+  left: 240px;
+  top: 150px;
+}
+
+.numbers{
+  position: relative;
+  color: #fff;
+
+}
+
+.main-number{
+  position: absolute;
+  color: #fff;
+  font-size: 27px;
+  letter-spacing: 0.15rem;
+  left: 190px;
+  width: 100%;
+  top: 20px;
+  z-index: 1;
+}
+
+.main-2-half{
+  font-size: 15px;
+  z-index: 1;
+}
+.avatar{
+  position: absolute;
+  color: #fff;
+  font-size: 15px;
+  left: 190px;
+  top: 80px; 
+  z-index: 1;
+  text-transform: uppercase;
+}
+#form {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+   
+}
+form label{
+ font-weight: 550;
+ padding-bottom: 10px;
+ padding-top: 20px;
+ color: hsl(278, 68%, 11%);
+ text-transform: uppercase;
+ font-size: 12px;
+}
+form input{
+    padding: 12px;
+    width: 85%;
+    border-radius: 7px;
+    border: 1px solid hsl(270, 3%, 87%);
+    
+}
+form input:focus{
+  border: 1px soild hsl(278, 68%, 11%);
+  cursor: pointer;
+  
+}
+.avatar-p{
+  color: hsl(0, 100%, 66%);
+  padding-top: 10px;
+  font-size: 10px;
+  text-transform: capitalize;
+  
+}
+.inputsss{
+  display: grid;
+  grid-template-columns: auto auto;
+  padding-top: 20px;
+  width: 90%;
+}
+.inputs input{
+    width: 80px;
+    margin: 10px 10px 10px 0;
+}
+ input::placeholder{
+    font-weight: 500;
+    color: hsl(279, 6%, 55%);
+}
+.cvc input{
+  margin: 10px;
+  width: 80%;
+}
+.second label{
+  padding-left: 12px;
+}
+.submit{
+  padding: 12px;
+  min-width: inherit;
+  width: 80%;
+  margin-top: 20px;
+  background-color: hsl(278, 68%, 11%);
+  color: hsl(0, 0%, 100%);
+  border-radius: 7px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.card-2{
+  position: relative;
+}
+.cvcdata{
+  position: absolute;
+  color: #fff;
+  font-size: 15px;
+  left: 560px;
+  top: 250px;
+  z-index: 1;
+}
+#cardnumber{
+  color: hsl(0, 100%, 66%);
+  padding-top: 7px;
+  font-size: 10px;
+}
+#thankyou{
+  text-align: center;
+  line-height: 2.5rem;
+  display: none;
+}
+#thankyou h2{
+  font-size: 35px;
+  text-transform: uppercase;
+}
+#thankyou p{
+  font-size: 17px;
+  color: hsl(279, 6%, 55%);
+  padding-bottom: 20px;
+}
+#thankyou button{
+  padding: 12px;
+  width: 350px;
+  border-radius: 8px;
+  border: none;
+  background-color: hsl(278, 68%, 11%);
+  color: #fff;
+  border-radius: 7px;
+  font-size: 16px;
+  cursor: pointer;
+
+}
+.error{
+  display: flex;
+  justify-content: space-between;
+}
+ .year-p, .cvcInput-p{
+  color: red;
+  font-size: 10px;
+  padding-left: 8px;
+}
+.month-p{
+  color: red;
+  font-size: 10px;
+  padding-left: 0px;
+}
+.month-p, .year-p{
+  letter-spacing: 0rem;
+  padding-right: 8px;
+}
