@@ -238,47 +238,50 @@ form input:focus{
     background-image: url(images/bg-main-mobile.png);
     background-repeat: no-repeat;
     background-size: contain;
-    overflow: visible;
     height: 300px;
   }
   .container{
     flex-direction: column;
+    justify-content: unset;
     overflow: scroll;
     gap: 5rem;
   }
   .front {
     position: relative;
-    left: 40px;
+    left: 20px;
     top: 150px;
     width: 300px;
+    max-width: 80%;
     z-index: 3;
   }
   .back {
     position: relative;
     width: 300px;
-    left: 90px;
+    max-width: 70%;
+    left: 70px;
     top: -150px;
   }
   .circle{
     width: 35px;
+
     height: 35px;
     background-color: #fff;
     border-radius: 50%;
     position: absolute;
-    left: 60px;
+    left: 40px;
     top: 175px ;
     z-index: 4;
   }
   .round{
     position: absolute;
-    left: 105px;
+    left: 85px;
     top:185px;
     z-index: 4;
   }
   .main-number{
     position: absolute;
     font-size: 20px;
-    left: 60px;
+    left: 40px;
     width: 100%;
     top: 60px;
     z-index: 4;
@@ -286,7 +289,7 @@ form input:focus{
   .avatar{
     position: absolute;
     font-size: 10px;
-    left: 60px;
+    left: 40px;
     top: 110px; 
     z-index: 4;
     text-transform: uppercase;
@@ -302,7 +305,7 @@ form input:focus{
   }
   .cvcdata{
     position: absolute;
-    left: 335px;
+    left: 295px;
     top: -80px;
     z-index: 4;
     font-size: 10px;
