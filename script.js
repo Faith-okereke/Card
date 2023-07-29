@@ -143,5 +143,5 @@ continueButton.addEventListener('click', ()=>{
     form.style.display = "block"
     thankyou.style.display = "none"
     location.reload()
-    form.reset();
+    form .reset();
 })

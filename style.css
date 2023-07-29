@@ -22,7 +22,7 @@
   background-image: url(images/bg-main-desktop.png);
   background-repeat: no-repeat;
   height: 100vh;
-  padding-left: 20px;
+  /* padding-left: 20px; */
 }
 .front {
   position: relative;
@@ -163,12 +163,11 @@ form input:focus{
   
 }
 .inputs #cvcInput{
-  width: 150px;
+  width: 140px;
 }
 .submit{
   padding: 12px;
-  min-width: inherit;
-  width: 100%;
+  width: 330px;
   margin-top: 40px;
   background-color: hsl(278, 68%, 11%);
   color: hsl(0, 0%, 100%);
@@ -233,3 +232,89 @@ form input:focus{
   font-size: 10px;
   padding-top: 5px;
 }
+ @media(max-width: 768px) {
+  .cards{
+    background-image: url(images/bg-main-mobile.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: visible;
+    height: 300px;
+  }
+  .container{
+    flex-direction: column;
+    overflow: scroll;
+    gap: 5rem;
+  }
+  .front {
+    position: relative;
+    left: 60px;
+    top: 150px;
+    width: 350px;
+    z-index: 3;
+  }
+  .back {
+    position: relative;
+    width: 350px;
+    left: 100px;
+    top: -170px;
+  }
+  .circle{
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    left: 90px;
+    top: 180px ;
+    z-index: 4;
+  }
+  .round{
+    position: absolute;
+    left: 150px;
+    top:190px;
+    z-index: 4;
+  }
+  .main-number{
+    position: absolute;
+    font-size: 23px;
+    left: 90px;
+    width: 100%;
+    top: 60px;
+    z-index: 4;
+  }
+  .avatar{
+    position: absolute;
+    font-size: 13px;
+    left: 90px;
+    top: 110px; 
+    z-index: 4;
+    text-transform: uppercase;
+  }
+  .all-span{
+    position: absolute;
+    left: 350px;
+    top: 110px;
+    font-size: 14px;
+    z-index: 4;
+  }
+  .cvcdata{
+    position: absolute;
+    left: 375px;
+    top: -85px;
+    z-index: 4;
+  }
+  #form{
+    margin-left: 20px;
+    justify-content: center;
+    /* align-items: center; */
+  }
+  #thankyou{
+    margin-top: 50px;
+  }
+  #thankyou img{
+    width: 100px;
+  }
+  #thankyou p{
+    font-size: 20px;
+  }
+ }
