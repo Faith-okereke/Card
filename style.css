@@ -121,7 +121,7 @@ form label{
 }
 form input{
     padding: 12px;
-    width: 85%;
+    width: 330px;
     border-radius: 7px;
     border: 1px solid hsl(270, 3%, 87%);
     
@@ -138,32 +138,32 @@ form input:focus{
   text-transform: capitalize;
   
 }
-.inputsss{
-  display: grid;
-  grid-template-columns: auto auto;
-  padding-top: 20px;
-  width: 90%;
-}
-.inputs input{
-    width: 80px;
-    margin: 10px 10px 10px 0;
-}
  input::placeholder{
     font-weight: 500;
     color: hsl(279, 6%, 55%);
 }
-.cvc input{
-  margin: 10px;
-  width: 80%;
+.labels{
+  display: flex;
+  gap: 7rem;
+  padding-bottom: 6px;
 }
-.second label{
-  padding-left: 12px;
+.inputs{
+  display: flex;
+  gap: 1rem;
+
+}
+.inputs #month, .inputs #year{
+  width: 80px;
+  
+}
+.inputs #cvcInput{
+  width: 150px;
 }
 .submit{
   padding: 12px;
   min-width: inherit;
-  width: 80%;
-  margin-top: 20px;
+  width: 100%;
+  margin-top: 40px;
   background-color: hsl(278, 68%, 11%);
   color: hsl(0, 0%, 100%);
   border-radius: 7px;
@@ -189,7 +189,10 @@ form input:focus{
 #thankyou{
   text-align: center;
   line-height: 2.5rem;
+  justify-content: center;
+  align-items: center;
   display: none;
+
 }
 #thankyou h2{
   font-size: 35px;
@@ -212,21 +215,8 @@ form input:focus{
   cursor: pointer;
 
 }
-.error{
-  display: flex;
-  justify-content: space-between;
-}
- .year-p, .cvcInput-p{
+ .year-p, .cvcInput-p,.month-p{
   color: red;
   font-size: 10px;
-  padding-left: 8px;
-}
-.month-p{
-  color: red;
-  font-size: 10px;
-  padding-left: 0px;
-}
-.month-p, .year-p{
-  letter-spacing: 0rem;
-  padding-right: 8px;
+  padding-top: 5px;
 }

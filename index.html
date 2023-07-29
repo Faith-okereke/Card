@@ -19,6 +19,7 @@
     <title>Frontend Mentor | Interactive card details form</title>
     <style></style>
   </head>
+
   <body>
     <div class="container">
       <div class="cards">
@@ -60,44 +61,26 @@
           maxlength="19"
         />
         <p id="cardnumber"></p>
-
-        <div class="inputsss">
-          <div class="first">
-            <label for="expire">Exp. Date (MM/YY)</label>
-            <div class="inputs">
-              <input maxlength="2" type="text" id="month" placeholder="MM" />
-              <input
-                maxlength="2"
-                type="text"
-                name=""
-                id="year"
-                placeholder="YY"
-              />
-              <div class="error">
-                <p class="month-p"></p>
-                <p class="year-p"></p>
-              </div>
-             
-            </div>
+        <div class="labels">
+          <label for="expiry date">exp.date(mm/yy)</label>
+          <label for="cvc">cvc</label>
+        </div>
+        <div class="inputs">
+          <div class="month">
+            <input id="month" type="text" maxlength="2" placeholder="MM">
+            <p class="month-p"></p>
           </div>
-          <div class="second">
-            <label for="cvc">CVC</label>
-            <div class="cvc">
-              <input
-                maxlength="3"
-                type="text"
-                name=""
-                id="cvcInput"
-                placeholder="e.g. 123"
-              />
-              <p class="cvcInput-p"></p>
-            </div>
+          <div class="year">
+            <input id="year" type="text" maxlength="2" placeholder="YY">
+            <p class="year-p"></p>
           </div>
+        <div class="cvcInput">
+          <input id="cvcInput" type="text" maxlength="3" placeholder="e.g 123">
+          <p class="cvcInput-p"></p>
+        </div>
         </div>
 
-        <button class="submit" type="submit">
-          Confirm
-        </button>
+        <button class="submit" type="submit">Confirm</button>
         <div class="attribution">
           Challenge by
           <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
