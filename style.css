@@ -2,8 +2,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* font-family: 'Manrope', sans-serif; */
-  font-family: monospace;
+  font-family: 'Manrope', sans-serif;
+  /* font-family: monospace; */
 }
 .attribution {
   font-size: 11px;
@@ -15,6 +15,8 @@
 .container {
   display: flex;
   gap: 30rem;
+  height: 100vh;
+  overflow: hidden;
 }
 .cards {
   background-image: url(images/bg-main-desktop.png);
@@ -26,7 +28,7 @@
   position: relative;
   left: 160px;
   top: 120px;
-  width: 400px;
+  width: 350px;
 }
 .card-1{
   position: relative;
@@ -37,7 +39,7 @@
   background-color: #fff;
   border-radius: 50%;
   position: absolute;
-  left: 190px;
+  left: 180px;
   top: 150px ;
   z-index: 1;
 }
@@ -48,44 +50,45 @@
   border-radius: 50%;
   border: 1px solid #fff;
   position: absolute;
-  left: 240px;
+  left: 230px;
   top:160px;
   z-index: 1;
 }
 .main-2{
-  color: #fff;
+  color: hsl(270, 3%, 87%);
   font-size: 15px;
   z-index: 1;
 }
 .all-span{
   position: absolute;
-  left: 480px;
+  left: 450px;
   top: 80px;
+  font-size: 14px;
 }
 .back .card-1 p {
   position: absolute;
-  color: #fff;
-  top: 10px;
+  color: hsl(270, 3%, 87%);
+  top: 6px;
 }
 .back {
   position: relative;
-  width: 400px;
+  width: 350px;
   left: 240px;
   top: 150px;
 }
 
 .numbers{
   position: relative;
-  color: #fff;
+  color: hsl(270, 3%, 87%);
 
 }
 
 .main-number{
   position: absolute;
-  color: #fff;
-  font-size: 27px;
+  color: hsl(270, 3%, 87%);
+  font-size: 23px;
   letter-spacing: 0.15rem;
-  left: 190px;
+  left: 180px;
   width: 100%;
   top: 20px;
   z-index: 1;
@@ -94,12 +97,13 @@
 .main-2-half{
   font-size: 15px;
   z-index: 1;
+  color: hsl(270, 3%, 87%);
 }
 .avatar{
   position: absolute;
-  color: #fff;
-  font-size: 15px;
-  left: 190px;
+  color: hsl(270, 3%, 87%);
+  font-size: 13px;
+  left: 180px;
   top: 80px; 
   z-index: 1;
   text-transform: uppercase;
@@ -112,18 +116,19 @@
    
 }
 form label{
- font-weight: 550;
  padding-bottom: 10px;
  padding-top: 20px;
  color: hsl(278, 68%, 11%);
  text-transform: uppercase;
  font-size: 12px;
+ letter-spacing: 0.1rem;
 }
 form input{
     padding: 12px;
     width: 330px;
     border-radius: 7px;
     border: 1px solid hsl(270, 3%, 87%);
+    font-weight: 700;
     
 }
 form input:focus{
@@ -139,12 +144,13 @@ form input:focus{
   
 }
  input::placeholder{
-    font-weight: 500;
+    /* font-weight: 500; */
     color: hsl(279, 6%, 55%);
 }
 .labels{
   display: flex;
-  gap: 7rem;
+  gap: 4rem;
+  letter-spacing: 0.1rem;
   padding-bottom: 6px;
 }
 .inputs{
@@ -175,10 +181,10 @@ form input:focus{
 }
 .cvcdata{
   position: absolute;
-  color: #fff;
+  color: hsl(270, 3%, 87%);
   font-size: 15px;
-  left: 560px;
-  top: 250px;
+  left: 520px;
+  top: 235px;
   z-index: 1;
 }
 #cardnumber{
@@ -192,16 +198,22 @@ form input:focus{
   justify-content: center;
   align-items: center;
   display: none;
+  margin-top: 200px;
 
+}
+#thankyou img{
+  width: 70px;
 }
 #thankyou h2{
   font-size: 35px;
   text-transform: uppercase;
+  padding-top: 20px;
 }
 #thankyou p{
   font-size: 17px;
   color: hsl(279, 6%, 55%);
   padding-bottom: 20px;
+  padding-top: 20px;
 }
 #thankyou button{
   padding: 12px;
@@ -213,6 +225,7 @@ form input:focus{
   border-radius: 7px;
   font-size: 16px;
   cursor: pointer;
+  margin-top: 20px;
 
 }
  .year-p, .cvcInput-p,.month-p{

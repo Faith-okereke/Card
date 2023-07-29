@@ -16,6 +16,7 @@ const monthCard = document.querySelector(".main-2");
 const yearCard = document.querySelector(".main-2-half");
 const cvcData = document.querySelector(".cvcdata");
 const avatarP = document.querySelector(".avatar-p");
+const continueButton = document.querySelector(".continueButton")
 
 cardName.addEventListener("input", () => {
     avatar.innerHTML = cardName.value;
@@ -69,12 +70,13 @@ submitForm.addEventListener('click', (e) => {
     }
 })
 function validateName() {
-    if (cardName.value == "") {
+    if (!cardName.value) {
         avatarP.innerHTML = "Can't be blank";
         cardName.style.border = "1px solid red";
         avatar.textContent = `JANE APPLESEED`;
     } else {
         avatarP.innerHTML = "";
+        cardName.style.border = "1px solid #fff";
         cardNameBoolean = true;
     }
 }
@@ -137,3 +139,9 @@ function validateCvc() {
         cvcCardBoolean = true
     }
 }
+continueButton.addEventListener('click', ()=>{
+    form.style.display = "block"
+    thankyou.style.display = "none"
+    location.reload()
+    form.reset();
+})
