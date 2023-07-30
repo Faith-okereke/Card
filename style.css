@@ -237,13 +237,13 @@ form input:focus{
   .cards{
     background-image: url(images/bg-main-mobile.png);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: 100vw;
     height: 300px;
   }
   .container{
     flex-direction: column;
     justify-content: unset;
-    overflow: scroll;
+    overflow:scroll;
     gap: 5rem;
   }
   .front {
@@ -251,15 +251,15 @@ form input:focus{
     left: 20px;
     top: 150px;
     width: 300px;
-    max-width: 80%;
+    min-width: 60%;
     z-index: 3;
   }
   .back {
     position: relative;
     width: 300px;
-    max-width: 70%;
-    left: 70px;
-    top: -150px;
+    min-width: 60%;
+    left: 60px;
+    top: -120px;
   }
   .circle{
     width: 35px;
@@ -311,7 +311,7 @@ form input:focus{
     font-size: 10px;
   }
   #form{
-    margin-left: 30px;
+    margin: 30px;
   }
   #thankyou{
     margin-top: 50px;
