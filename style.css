@@ -306,7 +306,7 @@ form input:focus{
   .cvcdata{
     position: absolute;
     left: 295px;
-    top: -80px;
+    top: -50px;
     z-index: 4;
     font-size: 10px;
   }
